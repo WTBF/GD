@@ -1,0 +1,29 @@
+@import "global.css";
+@import "ui/header.css";
+/*@import "ui/topNav.css";*/
+@import "ui/topSearch.css";
+@import "ui/topFilter.css";
+
+
+.list_item > a {
+	padding: 17px 11px;
+	display: flex;
+	align-items: center;
+	border-top: 2px solid #dadada;
+	& > img {
+		margin-right: 22px;
+		width: 223px;
+		height: 142px;
+	}
+	& > section {
+		flex: 1;
+		h2 {
+			padding-bottom: 30px;
+			font-size: 30px;
+			color: #3e3a39;
+		}
+		span {
+			color: #a1a2a2;
+		}
+	}
+}

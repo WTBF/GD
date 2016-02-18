@@ -1,0 +1,59 @@
+extends ./html/template/metaIndex
+block title
+  title hello everyone
+block css
+  link(rel="stylesheet", href="./css/index.css")
+block cotent
+  // 网页容器
+  div#wrapper
+    // 网页头部
+    header
+      p 求职宝
+      i.iconfont.back &#xe619;
+    // 网页导航
+    nav
+      //- ul
+      //-   li.active
+      //-     a(href="javaScript:;")
+      //-       i.iconfont &#xe60d;
+      //-       p 找名企
+      //-   li.call
+      //-     a(href="javaScript:;")
+      //-       i.iconfont &#xe623;
+      //-       p 找职位
+      //-   li
+      //-     a(href="javaScript:;")
+      //-       i.iconfont &#xe624;
+      //-       p 简历中心
+      //-   li
+      //-     a(href="javaScript:;")
+      //-       i.iconfont &#xe61f;
+      //-       p 我的求职
+    // 网页搜索lib／
+    div#top_search
+      div.form_search
+        input(type="text" placeholder="请输入文字")
+        i.iconfont.search_icon &#xe618;
+    // 网页内容
+    div#content
+      div.top_filter
+        ul
+          li
+            a(href="javaScript")
+              p 全部地区4
+              b.filter_icon.filter_close
+      div.list.common_list
+      - var array = [1,2,3,4,5,6,7]
+        - for (var i = 0; i < array.length; ++i) {
+          div.list_item
+            a(href="javaScript:;")
+              img(src="./images/list_default.png")
+              section
+                h2.list_title 名企标题名企标题名企标题名企标题名企标题
+                span.list_cs 浙江&nbsp;&nbsp;乐清
+        - }
+
+    // 网页底部
+    div#bototm
+block js
+  <script type="text/javascript" data-main="js/main" src="js/plugins/require.js"></script>

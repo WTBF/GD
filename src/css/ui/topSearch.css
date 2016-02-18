@@ -1,0 +1,27 @@
+/* web common top search */
+#top_search {
+	background-color: #e6e6e6;
+	padding: 12px 67px 12px 63px;
+	.form_search {
+		display: flex;
+		align-items: center;
+		height: 70px;
+		background-color: #fff;
+		border-radius: 40px;
+		input {
+			display: inline-block;
+			flex: 1;
+			padding-left: 50px;
+			height: 46px;
+			line-height: 46px;
+			border: none;
+			background: none;
+			font-size: 24px;			
+		}
+		i.search_icon {
+			font-size: 34px;
+			margin-right: 36px;
+			color: #c0bcbc;
+		}
+	}
+}

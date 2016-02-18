@@ -1,0 +1,18 @@
+/* web common header */
+header {
+	position: relative;
+	height: 94px;
+	line-height: 94px;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	background-color: #ffc503;
+	.back{
+		position: absolute;
+		top: 0;
+		left: 49px;
+		font-size: 22px;
+		font-weight: bold;
+		color: #fff;
+	}
+}

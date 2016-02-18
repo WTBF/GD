@@ -1,0 +1,93 @@
+{
+  "root": {
+    "src": "./src",
+    "dest": "./dest"
+  },
+
+  "tasks": {
+    "browserSync": {
+      "server": {
+        "baseDir": "dest"
+      }
+    },
+
+    "static": {
+      "src": "static",
+      "dest": "./"
+    },
+
+    "css": {
+      "src": "css",
+      "dest": "css",
+      "autoprefixer": {
+        "browsers": ["last 3 version"]
+      },
+      "sass": {
+        "indentedSyntax": true
+      },
+      "extensions": ["scss", "css"],
+      "excludeFolders": ["mixin", "ui"]
+
+    },
+
+    "js": {
+      "src": "js",
+      "dest": "js",
+      "extensions": ["js", "jsx", "json"]
+
+    },
+
+    "jc": {
+      "src": "js/components",
+      "dest": "js/components",
+      "extensions": ["css", "less", "sass"]
+
+    },
+
+
+    "html": {
+      "src": "./",
+      "dest": "./",
+      "htmlmin": {
+        "collapseWhitespace": true
+      },
+      "extensions": ["html", "jade", "json"],
+      "excludeFolders": ["template", "shared"]
+    },
+
+
+    "images": {
+      "src": "images",
+      "dest": "images",
+      "extensions": ["jpg", "png", "svg", "gif"]
+    },
+
+
+    "webpack": {
+      "src": "js",
+      "dest": "js",
+      "extensions": []
+
+    },
+
+
+    "fonts": {
+      "src": "fonts",
+      "dest": "fonts",
+      "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
+    },
+
+    "zip": {
+      "src": "./dest/**",
+      "dest": "./",
+      "projectName": "web"
+    },
+
+
+    "svgSprite": {
+      "src": "sprites",
+      "dest": "images",
+      "extensions": ["svg"]
+    }
+  }
+}

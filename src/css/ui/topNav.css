@@ -1,0 +1,41 @@
+/* web common top nav */
+nav {
+	background-color: #fceed2;
+	ul {
+		height: 90px;
+		overflow: hidden;
+		display: flex;
+		align-items: strecth;
+		li {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			border-bottom: 4px solid #ffc503;
+			a {
+				flex: 1;
+				display: block;
+				color: #ffc502;
+				font-size: 24px;
+				i{
+					font-size: 30px;
+					padding-bottom: 6px;
+				}
+			}
+		}
+		li:hover {
+			background-color: #ffc503;
+			border-color: #fff;
+			a {
+				color: #fff;
+			}
+		}
+		li.active {
+			background-color: #ffc503;
+			border-color: #fff;
+			a {
+				color: #fff;
+			}
+		}
+	}
+}

@@ -1,0 +1,128 @@
+@charset "utf-8";
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,
+figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0; padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display: block;}
+table{border-collapse:collapse; border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:normal;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body{background:#fff;}
+a,a:hover{color:#333;}
+a:visited{
+    /*color:#47AFEF !important;*/
+}
+a:active{
+	/*color:#47AFEF !important;*/
+}
+.cb{clear:both; overflow:hidden;}
+textarea {
+  -webkit-appearance: none;
+  line-height: 24px;
+  padding-top:2px;
+  text-indent:4px;
+  font-size: 1.4rem;
+}
+/*修改input中placeholder颜色*/
+:-moz-placeholder{color:#b2acac !important;}
+::-moz-placeholder{color:#b2acac !important;}
+:-ms-placeholder{color:#b2acac !important;}
+::-webkit-placeholder{color:#b2acac !important;}
+/*去除ie10中input输入框中的×*/
+input::-ms-clear{display:none;}
+/*修改移动端按钮点击后出现的灰色背景*/
+html{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+/*修改移动端input默认样式*/
+input{-webkit-appearance: none;}
+
+
+/* ------  css 片段  ------ */
+
+
+/*清除浮动*/
+.clearfix:before, .container:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+
+/*显示隐藏*/
+.show {display: block !important;}
+.hide {display: none !important;}
+
+
+/*跨浏览器的透明*/
+.transparent {
+    filter: alpha(opacity=50); /* internet explorer */
+    -khtml-opacity: 0.5;      /* khtml, old safari */
+    -moz-opacity: 0.5;       /* mozilla, netscape */
+    opacity: 0.5;           /* fx, safari, opera */
+}
+
+/*css3 全屏背景图*/
+.html-bg { 
+    background: url('') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*内容垂直居中*/
+.content-middle {
+    min-height: 6.5em;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*CSS3 列文本*/
+#columns-2 {
+    text-align: justify;
+    -moz-column-count: 3;
+    -moz-column-gap: 12px;
+    -moz-column-rule: 1px solid #c4c8cc;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 12px;
+    -webkit-column-rule: 1px solid #c4c8cc;
+}
+
+/*强制换行*/
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

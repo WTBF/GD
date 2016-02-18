@@ -1,0 +1,3 @@
+@define-mixin displayq $values {
+	display: $values;
+}
